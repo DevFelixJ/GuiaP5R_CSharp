@@ -235,6 +235,12 @@ document.addEventListener("DOMContentLoaded", function () {
 { name: "Satanael", checked: false },
   ];
 
+  // Cargar el estado de los checkboxes del almacenamiento local
+  var savedCharacters = localStorage.getItem("savedCharacters");
+  if (savedCharacters) {
+    characters = JSON.parse(savedCharacters);
+  }
+
   var characterList = document.getElementById("characterList");
 
   characters.forEach(function (character, index) {
@@ -245,11 +251,15 @@ document.addEventListener("DOMContentLoaded", function () {
     checkbox.type = "checkbox";
     checkbox.className = "character-checkbox";
     checkbox.id = "character-" + index;
+    checkbox.checked = character.checked; // Establecer el estado del checkbox
 
     var nameLabel = document.createElement("label");
     nameLabel.className = "character-name";
     nameLabel.setAttribute("for", "character-" + index);
     nameLabel.textContent = character.name;
+    if (character.checked) {
+      nameLabel.classList.add("character-ticked");
+    }
 
     characterItem.appendChild(checkbox);
     characterItem.appendChild(nameLabel);
@@ -259,6 +269,12 @@ document.addEventListener("DOMContentLoaded", function () {
     checkbox.addEventListener("change", function () {
       character.checked = checkbox.checked;
       nameLabel.classList.toggle("character-ticked", character.checked);
+      saveCharactersState(); // Llamar a la función para guardar el estado de los personajes
     });
   });
+
+  // Función para guardar el estado de los personajes en el almacenamiento local
+  function saveCharactersState() {
+    localStorage.setItem("savedCharacters", JSON.stringify(characters));
+  }
 });
