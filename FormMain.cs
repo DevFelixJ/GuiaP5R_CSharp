@@ -54,6 +54,12 @@ namespace Persona5Royal
             this.Hide();
         }
 
+        private void BtnPersona_Click(object sender, EventArgs e)
+        {
+            ReturnForms.GetFormPersona().Show();
+            this.Hide();
+        }
+
         private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -86,5 +92,7 @@ namespace Persona5Royal
 
 
         }
+
+
     }
 }

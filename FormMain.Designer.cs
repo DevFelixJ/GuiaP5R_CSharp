@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             BtnGuide = new Button();
             BtnConfidents = new Button();
             BtnBuilds = new Button();
             BtnExit = new Button();
             linkLabel1 = new LinkLabel();
+            BtnPersona = new Button();
             SuspendLayout();
             // 
             // BtnGuide
@@ -40,7 +42,7 @@
             BtnGuide.BackColor = Color.Crimson;
             BtnGuide.Font = new Font("p5hatty", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnGuide.ForeColor = SystemColors.ButtonFace;
-            BtnGuide.Location = new Point(283, 41);
+            BtnGuide.Location = new Point(283, 12);
             BtnGuide.Name = "BtnGuide";
             BtnGuide.Size = new Size(223, 58);
             BtnGuide.TabIndex = 0;
@@ -53,7 +55,7 @@
             BtnConfidents.BackColor = Color.Crimson;
             BtnConfidents.Font = new Font("p5hatty", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnConfidents.ForeColor = SystemColors.ButtonFace;
-            BtnConfidents.Location = new Point(283, 151);
+            BtnConfidents.Location = new Point(283, 100);
             BtnConfidents.Name = "BtnConfidents";
             BtnConfidents.Size = new Size(223, 58);
             BtnConfidents.TabIndex = 1;
@@ -66,7 +68,7 @@
             BtnBuilds.BackColor = Color.Crimson;
             BtnBuilds.Font = new Font("p5hatty", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnBuilds.ForeColor = SystemColors.ButtonFace;
-            BtnBuilds.Location = new Point(283, 260);
+            BtnBuilds.Location = new Point(283, 188);
             BtnBuilds.Name = "BtnBuilds";
             BtnBuilds.Size = new Size(223, 58);
             BtnBuilds.TabIndex = 2;
@@ -100,17 +102,32 @@
             linkLabel1.Text = "Created By DevFelix_J";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // BtnPersona
+            // 
+            BtnPersona.BackColor = Color.Crimson;
+            BtnPersona.Font = new Font("p5hatty", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            BtnPersona.ForeColor = SystemColors.ButtonFace;
+            BtnPersona.Location = new Point(283, 277);
+            BtnPersona.Name = "BtnPersona";
+            BtnPersona.Size = new Size(223, 58);
+            BtnPersona.TabIndex = 5;
+            BtnPersona.Text = "PERSONAS";
+            BtnPersona.UseVisualStyleBackColor = false;
+            BtnPersona.Click += BtnPersona_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Background;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtnPersona);
             Controls.Add(linkLabel1);
             Controls.Add(BtnExit);
             Controls.Add(BtnBuilds);
             Controls.Add(BtnConfidents);
             Controls.Add(BtnGuide);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormMain";
             Text = "P5R";
             Load += FormMain_Load;
@@ -125,5 +142,6 @@
         private Button BtnBuilds;
         private Button BtnExit;
         private LinkLabel linkLabel1;
+        private Button BtnPersona;
     }
 }

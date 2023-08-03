@@ -7,6 +7,7 @@ using Persona5Royal.Builds;
 using Persona5Royal.Confidents;
 using Persona5Royal.Guide;
 using Persona5Royal.Guide.Jobs;
+using Persona5Royal.Persona;
 //SCRIPT PARA PODER RETORNAR A LOS FORMULARIOS PRINCIPALES
 namespace Persona5Royal.Utilities
 {
@@ -17,6 +18,7 @@ namespace Persona5Royal.Utilities
         private static FormConfidents2 formConfidents2;
         private static FormGuide formGuide;
         private static FormJobs formJobs;
+        private static FormPersona formPersona;
 
         public static FormBuilds GetFormBuilds()
         {
@@ -75,5 +77,15 @@ namespace Persona5Royal.Utilities
             return formJobs;
         }
 
+        public static FormPersona GetFormPersona()
+        {
+            if (formBuilds == null || formPersona.IsDisposed)
+            {
+                formPersona = new FormPersona();
+            }
+            //Abre el formulario "FormPersona"
+            return formPersona;
+
+        }
     }
 }
