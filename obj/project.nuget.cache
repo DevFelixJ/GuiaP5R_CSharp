@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tpOGh7PYbuI2SJDXGCd+aiqHkJsYVOvQcnro0FfwstWU2tXiAqVDEwafyUdrNhLSwW9WQgRkLAsxyckkTKOhbA==",
+  "success": true,
+  "projectFilePath": "D:\\3.PROGRAMAS\\C#\\Persona5Royal\\Persona5Royal\\Persona5Royal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felix\\.nuget\\packages\\microsoft.web.webview2\\1.0.1823.32\\microsoft.web.webview2.1.0.1823.32.nupkg.sha512"
+  ],
+  "logs": []
+}

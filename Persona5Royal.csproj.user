@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\3.PROGRAMAS\C#\Persona5Royal\Persona5Royal\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Builds\Crow\FormCrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\FormBuilds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Fox\FormFox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Joker\FormJoker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Mona\FormMona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Noir\FormNoir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Oracle\FormOracle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Panther\FormPanther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Queen\FormQueen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Skull\FormSkull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Builds\Violet\FormViolet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Confidents\FormConfidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Confidents\FormConfidents2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Calendar\FormCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Calendar\SchemeMonths\FormSchemeMonths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Crosswords\FormCrosswords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\FormGuide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Jobs\777\Form777.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Jobs\Florist\FormFlorist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Jobs\FormJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Jobs\Ramen\FormRamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Guide\Palaces\FormPalaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Persona\Compendium\FormCompendium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Persona\FormPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

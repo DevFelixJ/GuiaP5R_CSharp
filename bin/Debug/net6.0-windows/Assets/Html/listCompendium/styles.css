@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1A1A1D;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.character-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.character-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.character-checkbox {
+  margin-right: 10px;
+}
+
+.character-name {
+  font-size: 18px;
+}
+
+.character-ticked {
+  text-decoration: line-through;
+  color: #FF0000;
+}
